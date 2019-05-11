@@ -50,6 +50,8 @@ Há a possibilidade de o projeto ser recriado ou importado no eclipse pelo time 
 
 O projeto deve ser incluído na perspectiva/painel "Projeto" após carregado, e estará apto para uso.
 
+### :triangular_flag_on_post: :warning: Avisos importantes
 
-
+- Não excluir arquivos importantes como .gitignore
+- Sempre executar build (Limpar e Construir no NetBeans) no projeto antes de usá-lo
 

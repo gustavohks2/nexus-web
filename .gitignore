@@ -1,2 +1,3 @@
 # Não incluir as seguintes pastas/arquivos no controle de versionamento
 /target/
+/src/main/webapp/node_modules/

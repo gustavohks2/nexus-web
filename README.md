@@ -13,6 +13,7 @@ Tomcat | >= 7 | https://tomcat.apache.org/download-70.cgi
 Hibernate ORM | - | http://hibernate.org/orm/
 NPM | 6.4.1 | https://www.npmjs.com/
 Javascript | ES5 e ES6 | https://www.ecma-international.org/ecma-262/6.0/
+Maven | 3.6.1 | https://maven.apache.org/
 
 
 ## Configurações iniciais para utilização

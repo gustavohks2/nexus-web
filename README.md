@@ -12,6 +12,7 @@ CSS | 3
 Bootstrap | 4 
 Tomcat | >= 7
 Hibernate | -
+NPM | 6.4.1
 
 
 ## Configurações iniciais para utilização

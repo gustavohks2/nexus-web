@@ -1,5 +1,5 @@
 # Nexus Web :globe_with_meridians: :muscle:
-Repositório que armazena arquivos com dados referentes ao projeto Nexus desenvolvido em linguagem java.
+Repositório que armazena artefatos de código fonte referentes ao projeto Nexus desenvolvido em linguagem java.
 
 ## Versões recomendadas das tecnologias envolvidas
 Tecnologia  | Versão | Saiba mais

@@ -2,18 +2,17 @@
 Repositório que armazena arquivos com dados referentes ao projeto Nexus desenvolvido em linguagem java.
 
 ## Versões recomendadas das tecnologias envolvidas
-Tecnologia  | Versão
------------- | -------------
-Java | 8 (1.8.0)
-JDK | 8
-Netbeans | 8.0.2
-HTML | 5
-CSS | 3
-Bootstrap | 4 
-Tomcat | >= 7
-Hibernate | -
-NPM | 6.4.1
-Javascript | ES6
+Tecnologia  | Versão | Saiba mais
+------------ | ------------- | -------------
+Java/JDK | 8 (1.8.0) | https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
+Netbeans | 8.0.2 | https://netbeans.org/downloads/8.0.2/
+HTML | 5 | https://www.w3.org/TR/html52/
+CSS | 3 | https://www.w3.org/TR/2001/WD-css3-roadmap-20010523/
+Bootstrap | 4 | https://getbootstrap.com/docs/4.0/getting-started/introduction/
+Tomcat | >= 7 | https://tomcat.apache.org/download-70.cgi
+Hibernate ORM | - | http://hibernate.org/orm/
+NPM | 6.4.1 | https://www.npmjs.com/
+Javascript | ES5 e ES6 | https://www.ecma-international.org/ecma-262/6.0/
 
 
 ## Configurações iniciais para utilização

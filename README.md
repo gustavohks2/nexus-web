@@ -13,6 +13,7 @@ Bootstrap | 4
 Tomcat | >= 7
 Hibernate | -
 NPM | 6.4.1
+Javascript | ES6
 
 
 ## Configurações iniciais para utilização

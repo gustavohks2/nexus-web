@@ -55,4 +55,12 @@ O projeto deve ser incluído na perspectiva/painel "Projeto" após carregado, e 
 
 - Não excluir arquivos importantes como .gitignore
 - Sempre executar build (Limpar e Construir no NetBeans) no projeto antes de usá-lo
+- Rodar `npm install` no diretório raíz dos arquivos web: nexus-web\src\main\webapp
+- Configurar NetBeans para ignorar arquivos e pastas que não são lidas corretamente pela IDE causando falso positivo. Vá no menu **Ferramentas > Opções**. Na tela que se abre, selecione a opção **Diversos** e clique na aba **Arquivos**. Adicione na seção **Arquivos Ignorados pela IDE > Padrão de Arquivos Ignorados:** o texto a seguir, exatamente como está escrito, incluindo a barra vertical (pipe = |) e clique em **Aplicar** e depois em **OK**:
+
+node_modules|
+
+![node_modules](https://user-images.githubusercontent.com/22922799/57583326-caa8d980-74a5-11e9-8a68-36ea0c732bf7.png)
+
+
 

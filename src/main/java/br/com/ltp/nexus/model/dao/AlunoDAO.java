@@ -1,9 +1,11 @@
 package br.com.ltp.nexus.model.dao;
 
+import java.util.List;
+
 import javax.persistence.EntityManager;
 import javax.persistence.Persistence;
+
 import br.com.ltp.nexus.model.entidade.Aluno;
-import java.util.List;
 
 public class AlunoDAO {
     

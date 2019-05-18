@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html class="custom-html">
    <head>
-      <meta name="viewport" content="width=device-with">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
       <title>Nexus</title>
       <link rel="icon" href="img/coach.png">
@@ -44,7 +44,7 @@
       </div>
 
       <script src="node_modules/jquery/jquery.min.js"></script>
-      <script src="node_modules/popper.js/dist/popper.min.js"></script>
+      <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
       <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
    </body>
 </html>

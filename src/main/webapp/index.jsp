@@ -45,7 +45,7 @@
                </div>
             </form>
          </div>
-
+         
          <div class="hero-background__barras">
             <div class="hero-background__barra hero-background__barra--1"></div>
             <div class="hero-background__barra hero-background__barra--2"></div>
@@ -64,7 +64,7 @@
       <script src="node_modules/argon-design-system-free/assets/js/argon.min.js"></script>
 
       <!-- Scripts do Projeto -->
-      <script src="/js/index.js"></script>
+      <script src="js/index.js"></script>
    </body>
 
 </html>

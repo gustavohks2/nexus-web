@@ -39,7 +39,7 @@ public class Controller extends HttpServlet {
 
                 if (!viewPath.isEmpty()) request.getRequestDispatcher(viewPath).forward(request, response);
             } catch (Exception e) {
-                request.getRequestDispatcher(request.getRequestURI());
+                e.printStackTrace();
             }
         }
     }

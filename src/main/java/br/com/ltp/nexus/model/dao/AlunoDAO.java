@@ -15,11 +15,13 @@ public class AlunoDAO {
         this.ENTITY_MANAGER = Persistence.createEntityManagerFactory("nexus-persistence-unit").createEntityManager();
     }
     
-    public List<Aluno> getAlunos() {
-        return null;
+    public void insert(Aluno aluno) {
+    	this.ENTITY_MANAGER.getTransaction().begin();
+    	this.ENTITY_MANAGER.persist(aluno);
+    	this.ENTITY_MANAGER.getTransaction().commit();
     }
     
-    public String getString() {
-        return "Hello";
+    public List<Aluno> obterTodosAlunos() {
+        return null;
     }
 }

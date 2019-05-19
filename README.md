@@ -54,6 +54,8 @@ O projeto deve ser incluído na perspectiva/painel "Projeto" após carregado, e 
 
 ### :triangular_flag_on_post: :warning: Avisos importantes
 
+- Alterar o arquivo persistence.xml de acordo seu usuário e senha do banco nexus
+- Utilizar o arquivo nexus-dump.sql para gerar o banco de dados antes de rodar o projeto
 - Não excluir arquivos importantes como .gitignore
 - Sempre executar build (Limpar e Construir no NetBeans) no projeto antes de usá-lo
 - Rodar `npm install` no diretório raíz dos arquivos web: nexus-web\src\main\webapp

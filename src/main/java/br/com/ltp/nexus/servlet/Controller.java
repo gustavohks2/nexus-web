@@ -13,34 +13,35 @@ import br.com.ltp.nexus.controller.IAction;
 
 @WebServlet("/controller")
 public class Controller extends HttpServlet {
-	
-	private static final long serialVersionUID = 1L;
-	private static final String CONTROLLER_PACKAGE = "br.com.ltp.nexus.controller.";
-       
+
+    private static final long serialVersionUID = 1L;
+    private static final String CONTROLLER_PACKAGE = "br.com.ltp.nexus.controller.";
+
     public Controller() {
         super();
     }
-    
-	protected void service(HttpServletRequest request, HttpServletResponse response) 
-			throws ServletException, IOException {
-		bootstrapControllerAction(request, response);
-	}
 
-	private void bootstrapControllerAction(HttpServletRequest request, HttpServletResponse response) throws IOException {
-		String requestAction = request.getParameter("action");
-		
-		if (requestAction != null && !requestAction.equals("")) {
-			try {
-				
-				Constructor<?> actionClassConstructor = Class.forName(CONTROLLER_PACKAGE + requestAction).getConstructor();
-				IAction action = (IAction) actionClassConstructor.newInstance();
-				String viewPath = action.execute(request, response);
-				
-				if (!viewPath.isEmpty()) request.getRequestDispatcher(viewPath).forward(request, response);
-			} catch (Exception e) {
-				e.printStackTrace();
-			}
-		}
-	}
+    @Override
+    protected void service(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        bootstrapControllerAction(request, response);
+    }
+
+    private void bootstrapControllerAction(HttpServletRequest request, HttpServletResponse response) throws IOException {
+        String requestAction = request.getParameter("action");
+
+        if (requestAction != null && !requestAction.equals("")) {
+            try {
+
+                Constructor<?> actionClassConstructor = Class.forName(CONTROLLER_PACKAGE + requestAction + "Controller").getConstructor();
+                IAction action = (IAction) actionClassConstructor.newInstance();
+                String viewPath = action.execute(request, response);
+
+                if (!viewPath.isEmpty()) request.getRequestDispatcher(viewPath).forward(request, response);
+            } catch (Exception e) {
+                request.getRequestDispatcher(request.getRequestURI());
+            }
+        }
+    }
 
 }

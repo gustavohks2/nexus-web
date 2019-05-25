@@ -112,7 +112,7 @@
 	                                    </button>
 	                                </div>
 	                                <div class="col-md-6">
-	                                    <button class="btn btn-icon btn-3 btn-outline-primary" type="button">
+	                                    <button class="btn btn-icon btn-3 btn-outline-primary" type="reset">
 	                                        <span class="btn-inner--icon">
 	                                            <i class="ni ni-basket"></i>
 	                                        </span>

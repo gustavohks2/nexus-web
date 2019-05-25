@@ -4,6 +4,7 @@ import java.io.Serializable;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -17,12 +18,16 @@ public class Aluno implements Serializable {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     
+    @Column(nullable=false)
     private String nome;
     
+    @Column(nullable=false)
     private String sobrenome;
     
+    @Column(nullable=false)
     private LocalDate dataNascimento;
     
+    @Column(nullable=false)
     private LocalDateTime dataInclusao;
     
     private String email;

@@ -3,6 +3,8 @@ package br.com.ltp.nexus.controller;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import br.com.ltp.nexus.model.dao.UsuarioDAO;
+
 public class LoginController implements IAction {
 
     @Override
@@ -10,7 +12,7 @@ public class LoginController implements IAction {
         if (request.getMethod().equals("POST")) logarUsuario(request);
         else return "index.jsp";
         
-        return "";
+        return "pages/dashboard/index.jsp";
     }
 
     private void logarUsuario(HttpServletRequest request) {
@@ -20,8 +22,8 @@ public class LoginController implements IAction {
         // Verificar usuário no banco
         
         // Criar sessão caso usuário exista
-        request.getSession().setAttribute("usuario", nome);
-        request.getSession().setMaxInactiveInterval(30 * 60);
+        //request.getSession().setAttribute("usuario", nome);
+        //request.getSession().setMaxInactiveInterval(30 * 60);
     }
     
 }

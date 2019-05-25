@@ -73,23 +73,8 @@
 	flex-direction: column;
 }
 
-.input-box
-:not
- 
-(
-:last-child
- 
-)
-{
-margin-bottom
-:
- 
-10
-px
-;
+.input-box:not(:last-child) { margin-bottom: 10px; }
 
-
-}
 .input-box__label {
 	color: white;
 	font-weight: 300;

@@ -9,7 +9,7 @@
 <html lang="pt-br">
 
 	<head>
-	    <title>Cadastrar Aluno</title>
+	    <title>Agendamento</title>
 		<jsp:include page="../../includes/base-head.jsp"/>
 	</head>
 	

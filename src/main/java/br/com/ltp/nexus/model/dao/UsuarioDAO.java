@@ -1,7 +1,9 @@
 package br.com.ltp.nexus.model.dao;
 
 import javax.persistence.EntityManager;
+import javax.persistence.NoResultException;
 import javax.persistence.Persistence;
+import javax.persistence.TypedQuery;
 
 import br.com.ltp.nexus.model.entidade.Usuario;
 
@@ -21,5 +23,31 @@ public class UsuarioDAO {
 	
 	public Usuario getUsuarioById(int idUsuario) {
 		return this.ENTITY_MANAGER.find(Usuario.class, idUsuario);
+	}
+
+	/**
+	 * Verifica se usuário e senha correspondem com registro no banco
+	 * usuario : Nome de usuário
+	 * senha : Senha de usuário
+	 * @return {@link Usuario} se existir no banco ou <code>null</code>
+	 */
+	public Usuario obterUsuarioSeCredenciaisCorretas(String usuario, String senha) {
+		StringBuilder sql = new StringBuilder("")
+			.append("SELECT u FROM Usuario u ")
+			.append("WHERE u.usuario = :usuario AND u.senha = :senha");
+		
+		TypedQuery<Usuario> query = this.ENTITY_MANAGER.createQuery(sql.toString(), Usuario.class);
+		query.setParameter("usuario", usuario);
+		query.setParameter("senha", senha);
+		
+		Usuario usr = null;
+		
+		try {
+			usr = query.getSingleResult();
+		} catch(NoResultException e) {
+			e.printStackTrace();
+		}
+		
+		return usr;
 	}
 }

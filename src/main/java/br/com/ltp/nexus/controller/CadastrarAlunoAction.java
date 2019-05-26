@@ -8,8 +8,9 @@ import javax.servlet.http.HttpServletResponse;
 import br.com.ltp.nexus.model.dao.AlunoDAO;
 import br.com.ltp.nexus.model.entidade.Aluno;
 import br.com.ltp.nexus.utils.DateUtils;
+import br.com.ltp.nexus.utils.IAction;
 
-public class CadastrarAlunoController implements IAction {
+public class CadastrarAlunoAction implements IAction {
 
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) throws Exception {

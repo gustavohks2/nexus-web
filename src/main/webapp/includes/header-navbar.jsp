@@ -58,7 +58,7 @@
 
 						<div class="dropdown-divider"></div>
 
-						<a class="dropdown-item" href="#"><i class="fa fa-sign-out"></i>Encerrar Sessão</a>
+						<a class="dropdown-item" href="/nexus-web/controller?action=Logout"><i class="fa fa-sign-out"></i>Encerrar Sessão</a>
 					</div>
 				</li>
 			</ul>

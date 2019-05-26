@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import br.com.ltp.nexus.controller.IAction;
+import br.com.ltp.nexus.utils.IAction;
 
 @WebServlet("/controller")
 public class Controller extends HttpServlet {
@@ -33,11 +33,11 @@ public class Controller extends HttpServlet {
         if (requestAction != null && !requestAction.equals("")) {
             try {
 
-                Constructor<?> actionClassConstructor = Class.forName(CONTROLLER_PACKAGE + requestAction + "Controller").getConstructor();
+                Constructor<?> actionClassConstructor = Class.forName(CONTROLLER_PACKAGE + requestAction + "Action").getConstructor();
                 IAction action = (IAction) actionClassConstructor.newInstance();
                 String viewPath = action.execute(request, response);
-
-                if (!viewPath.isEmpty()) request.getRequestDispatcher(viewPath).forward(request, response);
+                
+                if (viewPath != null && !viewPath.isEmpty()) request.getRequestDispatcher(viewPath).forward(request, response);
             } catch (Exception e) {
                 e.printStackTrace();
             }

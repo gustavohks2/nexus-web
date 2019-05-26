@@ -7,7 +7,7 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="pt-br">
-
+	<%@include file="../../includes/verificar-login.jsp" %>
 	<head>
 	    <title>Agendamento</title>
 		<jsp:include page="../../includes/base-head.jsp"/>
@@ -27,8 +27,6 @@
 	                <div class="card-body">
 	                    <form action="/nexus-web/controller?action=AgendarAluno" method="POST" id="form-agendar-aluno">
 	                        <div class="row">
-	                            
-                                    
 	
 	                        <div style="width: 40%; margin: auto;" class="mt-5">
 	                            <div class="row no-gutters">

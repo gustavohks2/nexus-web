@@ -1,4 +1,4 @@
-package br.com.ltp.nexus.controller;
+package br.com.ltp.nexus.utils;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;

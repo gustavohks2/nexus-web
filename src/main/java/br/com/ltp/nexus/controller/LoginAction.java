@@ -8,9 +8,10 @@ import javax.servlet.http.HttpSession;
 
 import br.com.ltp.nexus.model.dao.UsuarioDAO;
 import br.com.ltp.nexus.model.entidade.Usuario;
+import br.com.ltp.nexus.utils.IAction;
 import br.com.ltp.nexus.utils.NxStringUtils;
 
-public class LoginController implements IAction {
+public class LoginAction implements IAction {
 
 	// 30 Minutos
     private static final int TEMPO_MAXIMO_SESSAO_MINUTOS = 30 * 60;
@@ -28,6 +29,8 @@ public class LoginController implements IAction {
     }
 
     private boolean logarUsuario(HttpServletRequest request) throws Exception {
+    	if (Objects.nonNull(request.getSession().getAttribute("usuario"))) return true; // Não permite que usuário tente logar sem deslogar
+    	
         String usuario = request.getParameter("usuario");
         String senha = request.getParameter("senha");
         

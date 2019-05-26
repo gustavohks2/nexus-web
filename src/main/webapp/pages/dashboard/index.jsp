@@ -1,5 +1,6 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
+<%@include file="../../includes/verificar-login.jsp" %>
 <html lang="pt-br">
 	<head>
 		<title>Dashboard Personal</title>
@@ -41,7 +42,7 @@
                		</div>
                		
                		<div class="dashboard__action-card">
-               			<a href="#">
+               			<a href="../usuario">
                				<div class="dashboard__action-card-content">
                					<i class="ni ni-badge"></i>
                					<h4>Usuários</h4>

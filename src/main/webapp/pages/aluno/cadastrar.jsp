@@ -1,4 +1,6 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@include file="../../includes/verificar-login.jsp" %>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 

@@ -1,5 +1,9 @@
+<%@page import="java.util.Objects"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@page import="br.com.ltp.nexus.model.dao.AlunoDAO"%>
+
+<% if (Objects.nonNull(session.getAttribute("usuario"))) response.sendRedirect("/nexus-web/pages/dashboard"); %>
+
 <!DOCTYPE html>
 <html class="custom-html">
 

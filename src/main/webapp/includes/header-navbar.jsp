@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" %>
+
 <nav class="navbar navbar-expand-lg navbar-dark bg-default">
 	<div class="container">
 		<a style="display: flex; align-items: center;" class="navbar-brand"
@@ -15,7 +15,7 @@
 			<div class="navbar-collapse-header">
 				<div class="row">
 					<div class="col-6 collapse-brand">
-						<a href="index.html"> <img src="../../img/dumbbell.svg"></a>
+						<a href="index.html"> <img src="${ pageContext.request.contextPath }/img/dumbbell.svg"></a>
 					</div>
 					<div class="col-6 collapse-close">
 						<button type="button" class="navbar-toggler"
@@ -33,32 +33,32 @@
 					<a class="nav-link " href="#"> <i class="ni ni-book-bookmark"></i> <span>Agendamentos</span></a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link " href="#"> <i class="ni ni-notification-70"></i><span>Fale Conosco</span></a>
+					<a class="nav-link " href="#"> <i class="ni ni-notification-70"></i><span>Sobre</span></a>
 				</li>
 				<li class="nav-item dropdown">
 					<a class="nav-link nav-link-icon"
 					href="#" id="navbar-default_dropdown_1" role="button"
 					data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 						<i class="fa fa-bars"></i> 
-						<span class="nav-link-inner--text d-lg-none">AÁıes</span>
+						<span class="nav-link-inner--text d-lg-none">A√ß√µes</span>
 					</a>
 					<div class="dropdown-menu dropdown-menu-right"
 						aria-labelledby="navbar-default_dropdown_1">
 						
 						<a class="dropdown-item" href="#"> <i class="ni ni-circle-08"></i>
-							Ol·, Gustavo
+							Ol√°, Gustavo
 						</a>
 
 						<div class="dropdown-divider"></div>
 
 						<a class="dropdown-item" href="#"><i class="ni ni-single-02"></i>Gerenciar Aluno</a> 
 						<a class="dropdown-item" href="#"><i class="ni ni-user-run"></i> Gerenciar Treinos</a> 
-						<a class="dropdown-item" href="#"><i class="ni ni-calendar-grid-58"></i> Olhar Calend·rio</a> 
-						<a class="dropdown-item" href="#"><i class="fa fa-user-plus"></i>Novo Usu·rio</a>
+						<a class="dropdown-item" href="#"><i class="ni ni-calendar-grid-58"></i> Olhar Calend√°rio</a> 
+						<a class="dropdown-item" href="#"><i class="fa fa-user-plus"></i>Novo Usu√°rio</a>
 
 						<div class="dropdown-divider"></div>
 
-						<a class="dropdown-item" href="#"><i class="fa fa-sign-out"></i>Encerrar Sess„o</a>
+						<a class="dropdown-item" href="#"><i class="fa fa-sign-out"></i>Encerrar Sess√£o</a>
 					</div>
 				</li>
 			</ul>

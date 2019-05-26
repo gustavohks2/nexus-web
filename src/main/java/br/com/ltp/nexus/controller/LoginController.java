@@ -22,7 +22,9 @@ public class LoginController implements IAction {
         if (request.getMethod().equals("POST")) logado = logarUsuario(request);
         else return "index.jsp";
         
-        return !logado ? "index.jsp" : "pages/dashboard/index.jsp";
+        if (logado) response.sendRedirect("pages/dashboard/index.jsp");
+        	
+        return "index.jsp";
     }
 
     private boolean logarUsuario(HttpServletRequest request) throws Exception {

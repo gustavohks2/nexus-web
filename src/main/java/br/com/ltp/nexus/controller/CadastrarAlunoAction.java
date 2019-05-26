@@ -19,7 +19,7 @@ public class CadastrarAlunoAction implements IAction {
     	new AlunoDAO().insert(aluno);
     	
     	response.getWriter().print("Aluno salvo com sucesso!");
-        return "";
+        return null;
     }
 
 	private Aluno obterAlunoAPartirDaRequisicao(HttpServletRequest request) {

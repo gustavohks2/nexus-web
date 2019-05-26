@@ -42,7 +42,7 @@
                		</div>
                		
                		<div class="dashboard__action-card">
-               			<a href="../usuario">
+               			<a href="/nexus-web/controller?action=ListarUsuarios">
                				<div class="dashboard__action-card-content">
                					<i class="ni ni-badge"></i>
                					<h4>Usuários</h4>

@@ -48,6 +48,12 @@
 						<a class="dropdown-item" href="#"> <i class="ni ni-circle-08"></i>
 							Olá, Gustavo
 						</a>
+						
+						<div class="dropdown-divider"></div>
+						
+						<a class="dropdown-item" href="/nexus-web/pages/dashboard"> <i class="ni ni-ungroup"></i>
+							Dashboard
+						</a>
 
 						<div class="dropdown-divider"></div>
 

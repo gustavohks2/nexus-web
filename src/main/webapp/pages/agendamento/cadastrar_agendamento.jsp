@@ -27,6 +27,40 @@
 	                <div class="card-body">
 	                    <form action="/nexus-web/controller?action=AgendarAluno" method="POST" id="form-agendar-aluno">
 	                        <div class="row">
+	                            
+                                <div class="col-md-3">
+                                    <div class="form-group">
+	                                <label>Data</label>
+	                                <input type="text" name="data" class="form-control datepicker"
+	                                id="input-data" placeholder="DD/MM/AAAA">
+	                            </div>
+	                        </div> 
+                                    
+                                <div class="col-md-3">
+                                    <div class="form-group">
+	                                <label>Horário</label>
+	                                <input type="time" name="time" class="form-control"
+	                                id="input-time">
+	                            </div>
+	                        </div>
+                                    
+                                <div class="col-md-3">
+                                    <div class="form-group">
+	                                <label>Aluno</label>
+                                        <select class="form-control" id="input-aluno">
+                                            <option>SELECIONE UM ALUNO</option>
+                                        </select>
+	                            </div>
+	                        </div>
+                                
+                                <div class="col-md-3">
+                                    <div class="form-group">
+	                                <label>Treino</label>
+                                        <select class="form-control" id="input-aluno">
+                                            <option>SELECIONE UM TREINO</option>
+                                        </select>
+	                            </div>
+	                        </div>
 	
 	                        <div style="width: 40%; margin: auto;" class="mt-5">
 	                            <div class="row no-gutters">

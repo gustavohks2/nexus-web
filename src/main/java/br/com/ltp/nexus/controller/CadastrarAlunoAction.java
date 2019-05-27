@@ -18,8 +18,7 @@ public class CadastrarAlunoAction implements IAction {
     	
     	new AlunoDAO().insert(aluno);
     	
-    	response.getWriter().print("Aluno salvo com sucesso!");
-        return null;
+        return "/controller?action=ListarAlunos";
     }
 
 	private Aluno obterAlunoAPartirDaRequisicao(HttpServletRequest request) {

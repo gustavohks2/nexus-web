@@ -22,4 +22,16 @@ public class NxStringUtils {
 		
 		return hashString;
 	}
+	
+	public static Integer getIntegerFromString(String string) {
+		boolean isNumeric = false;
+		Integer numberFromString = 0;
+		try {
+			numberFromString = Integer.parseInt(string);
+			isNumeric = true;
+		} catch(Exception ex) {
+			ex.printStackTrace();
+		}
+		return isNumeric ? numberFromString : null;
+	}
 }

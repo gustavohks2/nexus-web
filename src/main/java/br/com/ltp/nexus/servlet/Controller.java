@@ -28,6 +28,8 @@ public class Controller extends HttpServlet {
     }
 
     private void bootstrapControllerAction(HttpServletRequest request, HttpServletResponse response) throws IOException {
+    	request.setCharacterEncoding("utf-8");
+    	response.setCharacterEncoding("utf-8");
         String requestAction = request.getParameter("action");
 
         if (requestAction != null && !requestAction.equals("")) {
